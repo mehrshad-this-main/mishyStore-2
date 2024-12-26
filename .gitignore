@@ -10,7 +10,7 @@ yarn-error.log*
 .output
 .data
 .nitro
-
+.vscode
 # Runtime data
 pids
 *.pid
