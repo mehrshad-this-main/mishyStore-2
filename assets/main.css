@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("@/assets/font/Vazir.woff2") format("woff2"),
+    url("@/assets/font/Vazir.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Vazir";
+  src:url("@/assets/font/Vazir-Thin.woff2") format("woff2"),
+  url("@/assets/font/Vazir-Thin.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+* {
+  font-family: "Vazir", sans-serif !important;
+}
+.main-container {
+  height: 600px;
+  width: 100%;
+}
