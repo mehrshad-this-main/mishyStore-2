@@ -5,25 +5,30 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Vazir";
-  src:url("@/assets/font/Vazir-Thin.woff2") format("woff2"),
-  url("@/assets/font/Vazir-Thin.woff") format("woff");
+  src: url("@/assets/font/Vazir-Thin.woff2") format("woff2"),
+    url("@/assets/font/Vazir-Thin.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
+
 * {
   font-family: "Vazir", sans-serif !important;
 }
+
 .main-container {
   height: 600px;
   width: 100%;
 }
-.primaryFont{
+
+.primaryFont {
   font-size: large;
-  color:#bea9c5;
+  color: #bea9c5;
   margin: 0 5px 0 5px;
 }
+
 .colet {
   width: 6.5rem;
   height: 6.5rem;
@@ -31,5 +36,5 @@
   z-index: 2;
   position: absolute;
   left: 0px;
-  top:0;
+  top: 0;
 }

@@ -1,6 +1,5 @@
 <script>
 import { computed } from 'vue';
-
 export default {
   props: ["obj"],
   setup(props) {
@@ -58,7 +57,7 @@ export default {
         price: 42000,
       },
     ];
-    const mainList = computed(()=>props.obj ? pList : pList2);
+    const mainList = computed(() => props.obj ? pList : pList2);
 
     return { mainList };
   },
@@ -71,5 +70,3 @@ export default {
     </v-slid-item>
   </v-slide-group>
 </template>
-
-<style></style>
