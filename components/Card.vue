@@ -1,17 +1,19 @@
-<script setup>
-
+<script>
+export default {
+  props: ["name","id","price"],
+}
 </script>
 <template>
-  <div>
-    <v-card class="my-4 pt-2" elevation="1" width="260" height="420">
+  
+    <v-card class="my-4 pt-2" elevation="1" width="260" height="420" hover>
         <v-img
           height="230"
           alt="img"
           class="ma-4"
-          src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
+          :src="`https://picsum.photos/seed/10${id}/300`"
         ></v-img>
-        <v-card-title centered>Cafe Badilico</v-card-title>
-        <v-card-text> 12000t </v-card-text>
+        <v-card-title centered>{{ name }}</v-card-title>
+        <v-card-text> بلیط {{ price }} </v-card-text>
         <v-card-action class="mr-15">
           <v-btn icon>
             <img
@@ -38,6 +40,5 @@
           </v-btn>
         </v-card-action>
       </v-card>
-  </div>
 </template>
 

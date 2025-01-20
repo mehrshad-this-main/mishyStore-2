@@ -19,3 +19,17 @@
   height: 600px;
   width: 100%;
 }
+.primaryFont{
+  font-size: large;
+  color:#bea9c5;
+  margin: 0 5px 0 5px;
+}
+.colet {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 20px 0 20px 20px;
+  z-index: 2;
+  position: absolute;
+  left: 0px;
+  top:0;
+}
