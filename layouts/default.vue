@@ -1,5 +1,4 @@
-<script setup>
-</script>
+<script setup></script>
 <template>
   <v-app>
     <v-main>
@@ -33,6 +32,6 @@
 
 .myF {
   font-size: small;
-  color: white
+  color: white;
 }
 </style>
