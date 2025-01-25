@@ -18,22 +18,18 @@ export default {
         <img
           width="18"
           alt="btn"
-          src="../assets/icon/reload-ui-2-svgrepo-com(1).svg"
+          src="/icon/reload-ui-2-svgrepo-com(1).svg"
           style="filter: brightness(30%)"
         />
       </v-btn>
       <v-btn icon>
-        <img
-          width="30"
-          alt="btn"
-          src="../assets/icon/cart-check-svgrepo-com(1).svg"
-        />
+        <img width="30" alt="btn" src="/icon/cart-check-svgrepo-com(1).svg" />
       </v-btn>
       <v-btn icon>
         <img
           width="18"
           alt="btn"
-          src="../assets/icon/hurt.svg"
+          src="/icon/hurt.svg"
           style="filter: brightness(30%)"
         />
       </v-btn>

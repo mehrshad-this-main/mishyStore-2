@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Vazir";
-  src: url("@/assets/font/Vazir.woff2") format("woff2"),
+  src:
+    url("@/assets/font/Vazir.woff2") format("woff2"),
     url("@/assets/font/Vazir.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -8,7 +9,8 @@
 
 @font-face {
   font-family: "Vazir";
-  src: url("@/assets/font/Vazir-Thin.woff2") format("woff2"),
+  src:
+    url("@/assets/font/Vazir-Thin.woff2") format("woff2"),
     url("@/assets/font/Vazir-Thin.woff") format("woff");
   font-weight: 300;
   font-style: normal;
@@ -16,6 +18,12 @@
 
 * {
   font-family: "Vazir", sans-serif !important;
+}
+
+.site-title {
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
 }
 
 .main-container {
@@ -39,6 +47,11 @@
   top: 0;
 }
 
-.gr{
-  background: linear-gradient(to right, #ffffff, #8977ca,#8977ca);
+.gr {
+  background: linear-gradient(to right, #ffffff, #8977ca, #8977ca);
+}
+@media only screen and (max-width: 1200px) {
+  .site-title {
+    font-size: 1.5rem;
+  }
 }

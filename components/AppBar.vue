@@ -1,44 +1,42 @@
+<script setup>
+import { ref } from "vue";
+const drawer = ref(false);
+</script>
 <template>
-  <v-app-bar elevation="0" color="transparent">
-    <h1 class="font-weight-regular myF text-h5">MishyStore</h1>
-    <v-responsive max-width="500" class="mx-auto">
-      <v-text-field
-        light
-        style="color: black"
-        class="white pa-2"
-        append-icon="mdi-magnify"
-        placeholder="جستوجو کنید..."
-        hide-details
-        rounded
-      />
-    </v-responsive>
-    <div class="flex-row d-flex">
-      <div
-        style="border: 1px solid #000"
-        class="categoryB d-flex flex-row px-5 py-1"
-      >
-        <img
-          width="21px"
-          src="../assets/icon/account-avatar-head-svgrepo-com(1).svg"
-          alt="account"
+  <div>
+    <v-app-bar elevation="0" color="transparent">
+      <h1 class="site-title">MishyStore</h1>
+      <v-responsive max-width="400" min-width="180" class="mx-auto">
+        <v-text-field
+          light
+          style="color: black"
+          class="white mx-2 myT"
+          append-icon="mdi-magnify"
+          placeholder="جستوجو کنید..."
+          hide-details
+          rounded
         />
-        <h4 style="font-size: small" class="nav pa-1 myF">ورود و عضویت</h4>
-        <img
-          width="18px"
-          src="../assets/icon/down-arrow-5-svgrepo-com.svg"
-          alt="account"
-        />
+      </v-responsive>
+      <v-chip color="info" outlined class="mx-1 mx-md-2">
+        <v-icon>mdi-account</v-icon>
+        ورود و عضویت
+        <v-icon>mdi-chevron-down</v-icon>
+      </v-chip>
+      <div class="d-flex flex-row ma-2" style="gap: 20px">
+        <v-img
+          contain
+          width="20"
+          src="/icon/reload-ui-2-svgrepo-com(1).svg"
+        ></v-img>
+        <v-img contain width="20" src="/icon/hurt.svg"></v-img>
+        <v-icon @click="drawer = true" color="white">mdi-cart</v-icon>
       </div>
-      <div class="d-flex flex-row pa-2 justify-space-around">
-        <img
-          class="mx-3"
-          src="../assets/icon/reload-ui-2-svgrepo-com(1).svg"
-          width="19"
-          alt=""
-        />
-        <img class="mx-3" src="../assets/icon/hurt.svg" width="19" alt="" />
-        <v-icon dark class="pr-3">mdi-cart</v-icon>
-      </div>
-    </div>
-  </v-app-bar>
+    </v-app-bar>
+    <v-navigation-drawer
+      v-model="drawer"
+      absolute
+      temporary
+    ></v-navigation-drawer>
+  </div>
 </template>
+<style></style>

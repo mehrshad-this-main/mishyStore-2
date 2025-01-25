@@ -19,33 +19,35 @@ export default {
         <GrpSlider :obj="true" />
       </v-sheet>
     </v-sheet>
-    <v-sheet
-      class="d-flex flex-row justify-center my-16 pb-5"
-      style="gap: 10px"
-      width="100%"
-    >
-      <div class="d-flex">
+    <v-row no-gutters align="center">
+      <v-col cols="12" md="3" sm="6">
         <v-img
-          class="rounded-xl"
-          aspect-ration="1"
-          src="https://picsum.photos/seed/105/310/200"
-        />
-      </div>
-      <div class="d-flex">
+          class="rounded-lg ma-2"
+          :aspect-ration="16 / 9"
+          max-height="122"
+          max-width="100%"
+          src="https://picsum.photos/seed/102/300/200"
+        ></v-img
+      ></v-col>
+      <v-col cols="12" md="3" sm="6">
         <v-img
-          class="rounded-xl"
-          aspect-ration="1"
-          src="https://picsum.photos/seed/107/310/200"
-        />
-      </div>
-      <div class="d-flex">
+          :aspect-ration="16 / 9"
+          max-height="122"
+          max-width="100%"
+          class="rounded-lg ma-2"
+          src="https://picsum.photos/seed/101/300/200"
+        ></v-img
+      ></v-col>
+      <v-col cols="12" md="6" sm="12">
         <v-img
-          class="rounded-xl"
-          aspect-ration="1"
-          src="https://picsum.photos/seed/106/650/200"
-        />
-      </div>
-    </v-sheet>
+          :aspect-ration="16 / 9"
+          max-height="122"
+          max-width="100%"
+          class="rounded-lg ma-2"
+          src="https://picsum.photos/seed/1011/700/170"
+        ></v-img
+      ></v-col>
+    </v-row>
     <div class="mx-auto d-flex flex-column align-center mt-16">
       <v-icon x-large color="accent">mdi-dialpad</v-icon>
       <span style="font-size: large">جدید ترین ها</span>
@@ -60,11 +62,7 @@ export default {
             امار گویای ان است که چرامارابایدانتخات کنید
           </div>
           <div>
-            <img
-              src="../assets/icon/left-arrow-svgrepo-com.svg"
-              width="50"
-              alt="left"
-            />
+            <img src="/icon/left-arrow-svgrepo-com.svg" width="50" alt="left" />
           </div>
           <div class="d-flex flex-row ml-3" style="gap: 20px">
             <div class="mx-auto num d-flex align-center justify-center">
@@ -99,7 +97,7 @@ export default {
               دیدن همه محصولات
               <img
                 class="mx-2"
-                src="../assets/icon/left-arrow-svgrepo-com.svg"
+                src="/icon/left-arrow-svgrepo-com.svg"
                 width="20"
                 alt="left"
               />
@@ -108,7 +106,7 @@ export default {
               تماس با ما
               <img
                 class="mx-2"
-                src="../assets/icon/left-arrow-svgrepo-com.svg"
+                src="/icon/left-arrow-svgrepo-com.svg"
                 width="20"
                 alt="left"
               />
@@ -119,7 +117,7 @@ export default {
           <img
             width="80"
             style="transform: rotateZ(45px) rotate3d(1, 1, 1, 45deg)"
-            src="../assets/icon/cart-large-minimalistic-svgrepo-com.svg"
+            src="/icon/cart-large-minimalistic-svgrepo-com.svg"
           />
         </div>
       </v-container>
@@ -173,7 +171,6 @@ export default {
   background-color: white;
   border-radius: 10px;
 }
-
 .c-div {
   background: #bea9c5;
   width: 250px;
@@ -183,13 +180,11 @@ export default {
   position: relative;
   transition: all 1s ease-in-out;
 }
-
 .c-div:hover {
   width: 95%;
   background: #3c286b;
   border-radius: 10px;
 }
-
 .inner {
   opacity: 0;
   visibility: hidden;
@@ -201,20 +196,16 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .c-div:hover .inner {
   opacity: 1;
   visibility: visible;
 }
-
 .inner div {
   display: none;
 }
-
 .inner:hover div {
   display: block;
 }
-
 .c-div .siteN {
   color: #51367b;
   position: absolute;
@@ -222,7 +213,6 @@ export default {
   opacity: 1;
   transition: opacity 1s ease-in-out;
 }
-
 .c-div:hover .siteN {
   opacity: 0;
 }

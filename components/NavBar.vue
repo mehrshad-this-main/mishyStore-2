@@ -8,47 +8,63 @@ const navMenu = [
 ];
 </script>
 <template>
-  <div class="mx-auto nav-container align-center" style="z-index: 1">
-    <div class="d-flex flex-row white pa-3 rounded-r-pill rounded-l-pill">
-      <div class="primary categoryB pa-3 align-center justify-center">
-        <img
-          style="margin-bottom: -4px"
-          src="../assets/icon/down-arrow-5-svgrepo-com.svg"
-          width="19px"
-          alt="d"
-        />
-        <span class="myF"> دسته بندی محصولات </span>
-        <img
-          style="margin-bottom: -4px"
-          src="../assets/icon/category-svgrepo-com.svg"
-          width="19px"
-          alt="cat"
-        />
-      </div>
-      <div class="pa-3" v-for="item in navMenu">
-        <NuxtLink class="nav" :to="item.link">{{ item.name }}</NuxtLink>
-      </div>
-      <div style="width: 22rem"></div>
-      <div class="left d-flex justify-center align-center rounded-pill">
-        <span class="py-1 px-2" style="font-size: small; color: #bea9c5">
-          دارای مجوز رسمی از سازمان بهداشت
-        </span>
-      </div>
-      <div
-        class="colet d-flex flex-column justify-space-around align-center accent"
+  <div>
+    <div
+      style="width: 97.5%"
+      class="d-flex flex-row justify-center mx-auto my-auto"
+    >
+      <v-sheet
+        class="d-flex flex-row justify-space-between rounded-r-pill mx-auto align-center"
+        color="white"
+        style="height: fit-content; width: 100%"
       >
-        <div>
-          <img
-            width="25"
-            style="stop-color: white"
-            class="mt-3"
-            src="../assets/icon/support-svgrepo-com.svg"
-            alt=""
-          />
-        </div>
-        <div class="myF">پشتیبانی فوری</div>
-        <div class="myF">#329375123</div>
-      </div>
+        <v-btn color="primary" outlined rounded class="ml-0 ml-md-2 mr-4 my-4">
+          <v-img
+            src="/icon/category-svgrepo-com.svg"
+            alt="category"
+            width="24"
+            class="my-2 mx-0 mx-md-3"
+          ></v-img>
+          <span class="mx-1">دسته بندی</span>
+          <v-icon class="mx-0 mx-md-2">mdi-chevron-down</v-icon>
+        </v-btn>
+        <v-row no-gutters class="d-flex flex-row">
+          <v-btn
+            color="primary"
+            plain
+            v-for="i in navMenu"
+            :key="i.id"
+            :to="i.link"
+          >
+            {{ i.name }}
+          </v-btn>
+        </v-row>
+        <v-chip class="mx-4 primes" outlined color="primary">
+          دارای مجوز رسمی از هرجا که بخوای</v-chip
+        >
+      </v-sheet>
+      <v-sheet
+        width="fit-content"
+        shaped
+        class="accent d-flex flex-column justify-center align-center text-center"
+      >
+        <v-img
+          width="40"
+          class="ma-2"
+          src="/icon/support-svgrepo-com.svg"
+        ></v-img>
+        <span class="myF mt-0 mt-md-1"> پشتیبانی فوری </span>
+        <span style="font-size: large" class="myF my-1 mx-2 mx-md-4">
+          #123145
+        </span>
+      </v-sheet>
     </div>
   </div>
 </template>
+<style>
+@media only screen and (max-width: 1100px) {
+  .primes {
+    display: none;
+  }
+}
+</style>

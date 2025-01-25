@@ -14,7 +14,7 @@ export default {
     <span class="mx-auto myF" style="font-size: large">{{ subTitle }}</span>
     <img
       width="180"
-      src="../assets/icon/cart-large-svgrepo-com.svg"
+      src="/icon/cart-large-svgrepo-com.svg"
       class="mx-auto"
       alt="null"
     />
@@ -22,7 +22,7 @@ export default {
       <span style="color: black"> دیدن همه محصولات </span>
       <img
         width="24"
-        src="../assets/icon/left-arrow-svgrepo-com.svg"
+        src="/icon/left-arrow-svgrepo-com.svg"
         class="my-auto mx-2"
         alt="left-arrow"
       />
