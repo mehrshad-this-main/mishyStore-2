@@ -11,6 +11,7 @@ yarn-error.log*
 .data
 .nitro
 .vscode
+.assets
 # Runtime data
 pids
 *.pid
