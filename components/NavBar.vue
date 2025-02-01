@@ -1,11 +1,10 @@
-<script setup>
-	const navMenu = [
-		{ name: 'صفحه اصلی', link: '/', id: 0 },
-		{ name: 'فروشگاه', link: '/shop', id: 1 },
-		{ name: 'وبلاگ', link: '/', id: 2 },
-		{ name: 'درباره ما', link: '/', id: 3 },
-		{ name: 'تماس باما', link: '/', id: 4 },
-	]
+<script>
+	export default {
+		props: {
+			navMenu: Array,
+			indexed: Boolean,
+		},
+	}
 </script>
 <template>
 	<div>
@@ -15,11 +14,11 @@
 		>
 			<v-sheet
 				class="d-flex flex-row justify-space-between rounded-r-pill mx-auto align-center"
-				color="white"
+				:color="indexed ? 'white' : 'primary'"
 				style="height: fit-content; width: 100%"
 			>
 				<v-btn
-					color="primary"
+					:color="indexed ? 'info' : 'secondary'"
 					outlined
 					rounded
 					class="ml-0 ml-md-2 mr-4 my-4"
@@ -38,7 +37,7 @@
 					class="d-flex flex-row"
 				>
 					<v-btn
-						color="primary"
+						:color="indexed ? 'info' : 'secondary'"
 						plain
 						v-for="i in navMenu"
 						:key="i.id"
@@ -48,7 +47,7 @@
 					</v-btn>
 				</v-row>
 				<v-chip
-					class="mx-4 primes"
+					class="mx-4 d-none d-md-block"
 					outlined
 					color="primary"
 				>
@@ -76,13 +75,4 @@
 		</div>
 	</div>
 </template>
-<style>
-	.primes {
-		padding: auto;
-	}
-	@media only screen and (max-width: 1100px) {
-		.primes {
-			display: none;
-		}
-	}
-</style>
+<style></style>

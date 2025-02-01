@@ -19,7 +19,7 @@
 		></v-img>
 		<v-card-title centered>{{ name }}</v-card-title>
 		<v-card-text> بلیط {{ price }} </v-card-text>
-		<v-card-action class="mr-15">
+		<v-card-action class="mx-auto d-flex justify-center">
 			<v-btn icon>
 				<img
 					width="18"

@@ -26,7 +26,7 @@
 		<v-row
 			no-gutters
 			align="center"
-			class="my-16"
+			class="my-16 pb-6"
 		>
 			<v-col
 				cols="12"
@@ -36,7 +36,7 @@
 				<v-img
 					class="rounded-lg ma-2"
 					:aspect-ration="16 / 9"
-					max-height="132"
+					max-height="200"
 					max-width="100%"
 					src="https://picsum.photos/seed/107300/200"
 				></v-img
@@ -48,7 +48,7 @@
 			>
 				<v-img
 					:aspect-ration="16 / 9"
-					max-height="132"
+					max-height="200"
 					max-width="100%"
 					class="rounded-lg ma-2"
 					src="https://picsum.photos/seed/106/300/200"
@@ -60,15 +60,15 @@
 				sm="12"
 			>
 				<v-img
-					:aspect-ration="16 / 9"
-					max-height="132"
+					:aspect-ration="1"
+					max-height="200"
 					max-width="100%"
 					class="rounded-lg ma-2"
-					src="https://picsum.photos/seed/105/700/170"
+					src="https://picsum.photos/seed/105/800/240"
 				></v-img
 			></v-col>
 		</v-row>
-		<div class="mx-auto d-flex flex-column align-center mt-16">
+		<div class="mx-auto d-flex flex-column align-center mt-16 py-6">
 			<v-icon
 				x-large
 				color="accent"

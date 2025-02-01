@@ -1,15 +1,6 @@
 <script setup>
-	import AppBar from '../components/AppBar.vue'
-	import NavBar from '../components/NavBar.vue'
-	import CFooter from '../components/CFooter.vue'
-	import GrpAppBar from '../components/Grp/AppBar.vue'
-	const navMenu = [
-		{ name: 'صفحه اصلی', link: '/', id: 0 },
-		{ name: 'فروشگاه', link: '/', id: 1 },
-		{ name: 'وبلاگ', link: '/', id: 2 },
-		{ name: 'درباره ما', link: '/', id: 3 },
-		{ name: 'تماس باما', link: '/', id: 4 },
-	]
+	import { state } from '../store/main'
+	const navMenu = state().navMenu
 </script>
 <template>
 	<v-app>
@@ -22,7 +13,11 @@
 				indexed
 				class="d-none d-md-block"
 			/>
-			<NavBar class="d-none d-md-block" />
+			<NavBar
+				:navMenu="navMenu"
+				:indexed="true"
+				class="d-none d-md-block"
+			/>
 			<v-row
 				no-gutters
 				class="align-start justify-space-around mt-md-14 pt-3"
