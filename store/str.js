@@ -45,3 +45,34 @@ export const mainList = [
 		price: 42000,
 	},
 ]
+
+const blogItem = [
+	{
+		name: 'کوه کیش',
+		tag: 'فرهنگی',
+	},
+	{
+		name: 'جزیره کیش',
+		tag: 'اقتصادی',
+	},
+	{
+		name: 'قهوه کیش',
+		tag: 'فرهنگی',
+	},
+	{
+		name: 'جزیره کیش',
+		tag: 'نمایشی',
+	},
+	{
+		name: 'قهوه کیش',
+		tag: 'سرگمی',
+	},
+]
+function blogListF(item) {
+	return item.map((item, index) => ({
+		name: item.name,
+		tag: item.tag,
+		id: index + 1,
+	}))
+}
+export const blogList = blogListF(blogItem)

@@ -3,9 +3,9 @@ export const state = () => ({
 	navMenu: [
 		{ name: 'صفحه اصلی', link: '/', id: 0 },
 		{ name: 'فروشگاه', link: '/shop', id: 1 },
-		{ name: 'وبلاگ', link: '/', id: 2 },
-		{ name: 'درباره ما', link: '/', id: 3 },
-		{ name: 'تماس باما', link: '/', id: 4 },
+		{ name: 'وبلاگ', link: '/blog', id: 2 },
+		{ name: 'درباره ما', link: '/about-us', id: 3 },
+		{ name: 'تماس باما', link: '/contact-us', id: 4 },
 	],
 })
 
