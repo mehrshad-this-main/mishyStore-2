@@ -4,7 +4,7 @@
 		props: {
 			indexed: Boolean,
 		},
-		setup(props) {
+		setup() {
 			const drawer = ref(false)
 			return { drawer }
 		},
@@ -36,30 +36,41 @@
 					rounded
 				/>
 			</v-responsive>
-			<v-chip
+			<v-btn
+				to="/my-account"
 				color="info"
 				outlined
+				rounded
 				class="mx-1 mx-md-2"
 			>
 				<v-icon color="secondary">mdi-account</v-icon>
 				ورود و عضویت
 				<v-icon>mdi-chevron-down</v-icon>
-			</v-chip>
+			</v-btn>
 			<div
 				class="d-flex flex-row ma-2"
 				style="gap: 20px"
 			>
-				<v-icon :color="indexed ? 'white' : 'secondary'"
-					>mdi-heart-outline</v-icon
+				<v-btn
+					color="transparent"
+					icon
+					to="/liked"
+					small
 				>
-				<v-icon :color="indexed ? 'white' : 'secondary'"
-					>mdi-reload</v-icon
+					<v-icon :color="indexed ? 'white' : 'secondary'"
+						>mdi-heart-outline</v-icon
+					>
+				</v-btn>
+				<v-btn
+					icon
+					small
 				>
-				<v-icon
-					@click="drawer = true"
-					:color="indexed ? 'white' : 'secondary'"
-					>mdi-cart</v-icon
-				>
+					<v-icon
+						@click="drawer = true"
+						:color="indexed ? 'white' : 'secondary'"
+						>mdi-cart</v-icon
+					>
+				</v-btn>
 			</div>
 		</v-app-bar>
 		<v-navigation-drawer

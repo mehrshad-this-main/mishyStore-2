@@ -31,33 +31,29 @@
 						</div>
 						<div>
 							<span style="font-size: medium">
-								لورم ایپسوم متن ساختگی با تولید سادگی
-								نامفهوم از صنعت چاپ، و با استفاده از
-								طراحان گرافیک است. چاپگرها و متون بلکه
-								روزنامه و مجله در ستون و سطرآنچنان که لازم
-								است.ساختگی با تولید سادگی نامفهوم از صنعت
-								چاپ، و با استفاده از طراحان گرافیک
-								است.تولید سادگی نامفهوم از صنعت چاپ، و با
-								استفاده از طراحان گرافیک است.لورم ایپسوم
-								متن ساختگی با تولید سادگی نامفهوم از صنعت
-								چاپ، و با استفاده از طراحان گرافیک است.
-								چاپگرها و متون بلکه روزنامه و مجله در ستون
-								و سطرآنچنان که لازم است.ساختگی با تولید
-								سادگی نامفهوم از صنعت چاپ، و با استفاده از
-								طراحان گرافیک است.تولید سادگی نامفهوم از
-								صنعت چاپ، و با استفاده از طراحان گرافیک
+								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+								صنعت چاپ، و با استفاده از طراحان گرافیک است. چاپگرها
+								و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+								لازم است.ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+								و با استفاده از طراحان گرافیک است.تولید سادگی
+								نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+								است.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+								صنعت چاپ، و با استفاده از طراحان گرافیک است. چاپگرها
+								و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+								لازم است.ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+								و با استفاده از طراحان گرافیک است.تولید سادگی
+								نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
 								است.
 							</span>
 						</div>
 						<div>
-							<div
-								class="d-flex flex-md-row flex-column mt-2"
-							>
+							<div class="d-flex flex-md-row flex-column mt-2">
 								<v-btn
 									rounded
 									large
 									color="info"
 									class="my-md-0 my-3"
+									to="/contact-us.vue"
 								>
 									تماس باما
 									<div>
@@ -74,6 +70,7 @@
 									large
 									class="mx-2"
 									color="info"
+									to="/shop"
 								>
 									مشاهده فروشگاه
 									<div>
@@ -97,8 +94,8 @@
 				>
 					<div style="font-size: larger">مزایای خریدازفروشگاه ما</div>
 					<div>
-						لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-						چاپ، و با استفاده از طراحان گرافیک است.
+						لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+						استفاده از طراحان گرافیک است.
 					</div>
 					<v-img
 						src="/icon/left-arrow-svgrepo-com.svg"
@@ -122,15 +119,15 @@
 									class="text-center align-center align-content-center rounded-xl"
 									min-width="120px"
 								>
-									<v-icon size="50"
+									<v-icon
+										size="50"
+										color="pink"
 										>mdi-instagram</v-icon
 									>
-									<div class="ma-auto pt-4">
-										lore,
-									</div>
+									<div class="ma-auto pt-4">محصولات</div>
 									<v-card-subtitle>
-										Lorem ipsum dolor sit amet
-										consectetur
+										لورم ایپسوم متن ساختگی با تولید سادگی
+										نامفهوم از صنعت چاپ
 									</v-card-subtitle>
 								</v-card>
 							</v-col>
@@ -158,9 +155,8 @@
 				show-arrows
 			>
 				<v-slide-item
-					v-for="n in 8"
-					:key="n"
-					v-slot="{ active, toggle }"
+					v-for="i in 8"
+					:key="i"
 				>
 					<v-card
 						class="ma-4 mt-10 d-flex flex-column align-center text-center"
@@ -172,22 +168,15 @@
 							class="avatar"
 						>
 							<v-img
-								src="https://picsum.photos/seed/120/400/500"
+								:src="`https://picsum.photos/seed/12${i}/400/500`"
 							></v-img>
 						</v-avatar>
-						<div
-							style="
-								font-size: large;
-								transform: translate(0, -50%);
-							"
-							class=""
-						>
+						<div style="font-size: large; transform: translate(0, -50%)">
 							name
 						</div>
-						<span class="my-auto">
-							Lorem ipsum dolor sit amet consectetur
-							adipisicing ore totam unde delectus neque
-							dignissimos soluta?
+						<span class="my-auto px-4">
+							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+							و با استفاده از طراحان گرافیک است.
 						</span>
 						<v-rating
 							empty-icon="mdi-star-outline"
@@ -203,6 +192,63 @@
 				</v-slide-item>
 			</v-slide-group>
 		</v-sheet>
+		<v-container
+			fluid
+			class="my-5"
+		>
+			<v-row no-gutters>
+				<v-col
+					cols="12"
+					md="3"
+				>
+					<div class="d-flex">
+						<v-img
+							width="100%"
+							class="rounded-r-xl"
+							height="270"
+							src="https://picsum.photos/seed/122/400/200"
+						></v-img>
+					</div>
+				</v-col>
+				<v-col
+					cols="12"
+					md="9"
+				>
+					<v-sheet
+						color="primary"
+						class="pa-4 d-flex flex-column justify-space-between mt-2 mt-md-0"
+						min-height="270"
+					>
+						<div style="font-size: larger">
+							برخی از اهداف و آرمان های مجموعه ما
+						</div>
+						<div>
+							لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+							و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+							روزنامه و مجله در ستون و سطرآنچنان که لازم است.لورم ایپسوم
+							متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+							استفاده از طراحان گرافیک است. لورم ایپسوم متن ساختگی با
+						</div>
+						<div class="d-flex flex-wrap">
+							<v-chip class="mx-4 my-2"
+								>ارائه بهترین محصولات با نازلترین قیمت ها</v-chip
+							>
+							<v-chip class="mx-4 my-2"
+								>ارائه انواع محصولات کاملا بهداشتی و
+								استاندارد</v-chip
+							>
+							<v-chip class="mx-4 my-2"
+								>ارتقا و بهبود سطح دانش جنسی جامعه</v-chip
+							>
+							<v-chip class="mx-4 my-2"
+								>ارسال کاملا محرمانه به سراسر نقاط کشور</v-chip
+							>
+						</div>
+					</v-sheet>
+				</v-col>
+			</v-row>
+		</v-container>
+		<GrpMajals class="pt-4" />
 	</div>
 </template>
 <style>

@@ -17,21 +17,7 @@
 				:color="indexed ? 'white' : 'primary'"
 				style="height: fit-content; width: 100%"
 			>
-				<v-btn
-					:color="indexed ? 'info' : 'secondary'"
-					outlined
-					rounded
-					class="ml-0 ml-md-2 mr-4 my-4"
-				>
-					<v-img
-						src="/icon/category-svgrepo-com.svg"
-						alt="category"
-						width="24"
-						class="my-2 mx-0 mx-md-3"
-					></v-img>
-					<span class="mx-1">دسته بندی</span>
-					<v-icon class="mx-0 mx-md-2">mdi-chevron-down</v-icon>
-				</v-btn>
+				<FMegaMenu />
 				<v-row
 					no-gutters
 					class="d-flex flex-row"

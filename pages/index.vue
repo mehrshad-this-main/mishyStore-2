@@ -84,9 +84,7 @@
 		>
 			<div class="c-div d-flex justify-center align-center">
 				<span class="d-flex siteN myF">MishyStore</span>
-				<div
-					class="inner d-flex flex-row align-center justify-space-between"
-				>
+				<div class="inner d-flex flex-row align-center justify-space-between">
 					<div
 						class="myF mx-3"
 						style="font-size: x-large"
@@ -104,21 +102,15 @@
 						class="d-flex flex-row ml-3"
 						style="gap: 20px"
 					>
-						<div
-							class="mx-auto num d-flex align-center justify-center"
-						>
+						<div class="mx-auto num d-flex align-center justify-center">
 							<span class="primaryFont">988+</span>
 							تعداد فروش
 						</div>
-						<div
-							class="mx-auto num d-flex align-center justify-center"
-						>
+						<div class="mx-auto num d-flex align-center justify-center">
 							<span class="primaryFont">500+</span>
 							تنوع محصولات
 						</div>
-						<div
-							class="mx-auto num d-flex align-center justify-center"
-						>
+						<div class="mx-auto num d-flex align-center justify-center">
 							<span class="primaryFont">89%</span>
 							رضایت مشتریان
 						</div>
@@ -139,11 +131,10 @@
 						زمستان تمام شد، اما فروش بهاره ما تازه شروع شده است!
 					</div>
 					<div style="font-size: small">
-						لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
-						چاپ و با استفاده از
-						<br />طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
-						مجله در ستون و سطر چاپگرها و متون بلکه روزنامه و مجله
-						در ستون و سطر
+						لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+						استفاده از
+						<br />طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
+						ستون و سطر چاپگرها و متون بلکه روزنامه و مجله در ستون و سطر
 					</div>
 					<div class="pa-3">
 						<v-btn
@@ -151,6 +142,7 @@
 							outlined
 							class="rounded-pill"
 							large
+							to="/shop"
 						>
 							دیدن همه محصولات
 							<img
@@ -165,6 +157,7 @@
 							large
 							outlined
 							class="rounded-pill"
+							to="/contact-us"
 						>
 							تماس با ما
 							<img
@@ -179,10 +172,7 @@
 				<div>
 					<img
 						width="80"
-						style="
-							transform: rotateZ(45px)
-								rotate3d(1, 1, 1, 45deg);
-						"
+						style="transform: rotateZ(45px) rotate3d(1, 1, 1, 45deg)"
 						src="/icon/cart-large-minimalistic-svgrepo-com.svg"
 					/>
 				</div>
@@ -219,40 +209,7 @@
 			<span style="font-size: large"> وبلاگ</span>
 			<span style="font-size: small">لورم اسپیچ لورم اسپیچ لورم </span>
 		</div>
-		<v-sheet
-			width="100%"
-			class="d-flex mb-16 justify-center align-center"
-		>
-			<v-slide-group show-arrows>
-				<v-slide-item
-					v-for="i in 4"
-					:key="i"
-					class="ma-2"
-				>
-					<v-card
-						class="rounded pa-2"
-						width="290"
-					>
-						<v-img
-							width="250"
-							class="rounded ma-auto"
-							height="170"
-							src="https://picsum.photos/seed/1017/300/260"
-						/>
-						<v-card-title>لورم ایپسوم متن ساختگی</v-card-title>
-						<v-card-subtitle>
-							<span
-								>لورم ایپسوم متن ساختگی لورم ایپسوم متن
-								ساختگی با تولید سادگی نامفهوم از صنعت چاپ
-								و با استفاده از طراحان گرافیک است چاپگرها
-								و متون بلکه روزنامه و مجله در شرایط فعلی
-								تکنولوژی مورد نیاز ...
-							</span>
-						</v-card-subtitle>
-					</v-card>
-				</v-slide-item>
-			</v-slide-group>
-		</v-sheet>
+		<GrpMajals />
 	</div>
 </template>
 <style>

@@ -393,12 +393,12 @@
 			fluid
 			class="pb-10"
 		>
-			<!-- ///////////////////////////////////////////////////////// -->
 			<v-row>
 				<v-col
 					cols="12"
 					md="9"
 				>
+					<span>جدید ترین ها</span>
 					<div class="grid">
 						<GrpBlog
 							v-for="i in blogList"
@@ -414,11 +414,12 @@
 					cols="12"
 					md="3"
 				>
+					<span>پربحث ترین ها</span>
 					<v-sheet
 						color="primary"
 						width="100%"
 						rounded
-						class="pb-2"
+						class="pb-2 pt-4"
 					>
 						<div
 							v-for="i in 4"
@@ -442,7 +443,9 @@
 									align="center"
 									class="d-flex flex-column justify-space-between"
 								>
-									<span>ساده ترین روش ترک اعتیاد</span>
+									<span class="text-right"
+										>ساده ترین روش ترک اعتیاد</span
+									>
 									<div
 										class="d-flex flex-row justify-space-between"
 									>
@@ -500,6 +503,7 @@
 <style>
 	.grid {
 		display: grid;
+		width: 100%;
 		grid-template-columns: 1fr 1fr;
 		gap: 20px;
 	}
@@ -515,6 +519,10 @@
 	@media screen and (max-width: 980px) {
 		.custom-pic {
 			width: 100%;
+		}
+		.grid {
+			display: flex;
+			flex-direction: column;
 		}
 	}
 </style>

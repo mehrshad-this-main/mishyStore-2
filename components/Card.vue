@@ -19,15 +19,7 @@
 		></v-img>
 		<v-card-title centered>{{ name }}</v-card-title>
 		<v-card-text> بلیط {{ price }} </v-card-text>
-		<v-card-action class="mx-auto d-flex justify-center">
-			<v-btn icon>
-				<img
-					width="18"
-					alt="btn"
-					src="/icon/reload-ui-2-svgrepo-com(1).svg"
-					style="filter: brightness(30%)"
-				/>
-			</v-btn>
+		<v-card-action class="mr-4">
 			<v-btn icon>
 				<img
 					width="30"

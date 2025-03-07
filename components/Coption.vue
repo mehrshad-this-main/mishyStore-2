@@ -1,10 +1,17 @@
 <script>
 	export default {
 		props: ['title', 'subTitle'],
+		methods: {
+			goToShop() {
+				this.$router.push('/shop')
+			},
+		},
 	}
 </script>
 <template>
 	<v-sheet
+		nuxt
+		@click="goToShop"
 		width="240"
 		height="420"
 		class="my-4 c-card pt-2 d-flex flex-column justify-center"
